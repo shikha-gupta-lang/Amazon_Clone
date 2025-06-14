@@ -7,11 +7,10 @@
     <title>Amazon Clone</title>
 </head>
 <body>
-    <header>
+   <header>
         <div class="navbar">
             <div class="nav-logo border">
-                <div class="logo">
-                </div>
+                <div class="logo"></div>
             </div>
             <div class="nav-address border">
                 <p class="add-first">Deliver to</p>
@@ -21,208 +20,172 @@
                 </div>
             </div>
             <div class="nav-search">
-                <select class="search-select">
-                    <option>All</option>
-                </select>
-                <input placeholder="Search Amazon.in"  class="search-input">
-                <div class="search-icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+                <select class="search-select"><option>All</option></select>
+                <input placeholder="Search Amazon.in" class="search-input">
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="search-popup hidden">
+                <h4>Recent Searches</h4>
+                 <ul id="recent-searches"></ul>
+             </div>
             </div>
-        <div class="nav-signin border">
-            <p><span>Hello,sign in</span></p>
-            <p class="nav-second">Account & Lists</p>
+             
+    <div class="account-container">
+        <div class="nav-signin">
+           <p class="nav-first">Hello, sign in</p>
+           <p class="nav-second">Account & Lists <i class="fa fa-caret-down"></i></p>
         </div>
 
-        <div class="nav-return border">
-            <p><span>Returns</span></p>
-            <p class="nav-second">& Orders</p>
-        </div>
-        <div class="nav-cart border">
-            <i class="fa-solid fa-cart-shopping"></i>cart
-        </div>
-        </div>
+       <div class="account-dropdown">
+         <button class="sign-in-btn">Sign in</button>
+         <p class="new-customer">New customer? <a href="#">Start here.</a></p>
+         <hr />
+        <div class="dropdown-columns">
+            <div class="dropdown-column">
+                <h4>Your Lists</h4>
+                <ul>
+                    <li>Create a Wish List</li>
+                    <li>Wish from Any Website</li>
+                    <li>Baby Wishlist</li>
+                    <li>Discover Your Style</li>
+                    <li>Explore Showroom</li>
+                </ul>
+            </div>
+            <div class="dropdown-column">
+                <h4>Your Account</h4>
+                <ul>
+                    <li>Your Orders</li>
+                    <li>Your Wish List</li>
+                    <li>Your Recommendations</li>
+                    <li>Your Prime Membership</li>
+                    <li>Your Prime Video</li>
+                    <li>Subscribe & Save</li>
+                    <li>Your Seller Account</li>
+                    <li>Register for a business account</li>
+                </ul>
+             </div>
+            </div>
+            </div>
+          </div>
 
+
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i> cart
+            </div>
+        </div>
         <div class="panel">
-            <div class="panel-all border">
-                <i class="fa-solid fa-bars"></i>
-                all
+            <div class="panel-all border" id="allBtn">
+                <i class="fa-solid fa-bars"></i> All
             </div>
+        
+            <!-- Sidebar Menu -->
+<div class="sidebar-menu" id="sidebarMenu">
+    <div class="sidebar-header">
+        <span><i class="fa-solid fa-user-circle"></i> Hello, sign in</span>
+        <span class="close-btn" id="closeSidebar">&times;</span>
+    </div>
+
+    <div class="sidebar-section">
+        <h4>Trending</h4>
+        <ul>
+            <li>Bestsellers</li>
+            <li>New Releases</li>
+            <li>Movers and Shakers</li>
+        </ul>
+    </div>
+
+    <div class="sidebar-section">
+        <h4>Digital Content and Devices</h4>
+        <ul>
+            <li>Echo & Alexa</li>
+            <li>Fire TV</li>
+            <li>Kindle E-Readers & eBooks</li>
+            <li>Audible Audiobooks</li>
+            <li>Amazon Prime Video</li>
+            <li>Amazon Prime Music</li>
+        </ul>
+    </div>
+    <div class="sidebar-section">
+        <h4>Shop by Category</h4>
+        <ul>
+            <li>Mobiles,Computers</li>
+            <li>TV,Appliances,Electronics</li>
+            <li>Men's Fashion</li>
+            <li>women's Fashion</li>
+        </ul>
+    </div>
+    <div class="sidebar-section">
+        <h4>Programs & Features</h4>
+        <ul>
+            <li>Amazon Pay</li>
+            <li>Gift Cards & Mobile Recharges</li>
+            <li>Amazon Business</li>
+        </ul>
+    </div>
+    <div class="sidebar-section">
+        <h4>Help & Settings</h4>
+        <ul>
+            <li>Your Account</li>
+            <li>Customer Service</li>
+            <li>sign in</li>
+        </ul>
+    </div>
+</div>
             <div class="panel-ops">
-                <p class="panel-item border">Fresh</p>
-                <p class="panel-item border">MX Player</p>
-                <p class="panel-item border">Sell</p>
-                <p class="panel-item border">Best Sellers</p>
-                <p class="panel-item border">Today's Deals</p>
-                <p class="panel-item border">Mobiles</p>
-                <p class="panel-item border">Electronic</p>
-                <p class="panel-item border">Amazon Pay</p>
-                <p class="panel-item border">Customer Service</p>        
+                <p class="panel-item">Fresh</p>
+                <p class="panel-item">MX Player</p>
+                <p class="panel-item">Sell</p>
+                <p class="panel-item">Best Sellers</p>
+                <p class="panel-item">Today's Deals</p>
+                <p class="panel-item">Mobiles</p>
+                <p class="panel-item">Electronic</p>
+                <p class="panel-item">Amazon Pay</p>
+                <p class="panel-item">Customer Service</p>
+                <p class="panel-item">Fashion</p>
+                <p class="panel-item">Home & Kitchen</p>
             </div>
         </div>
     </header>
-    <div class="hero-section">
-    </div>
+    <div class="hero-section"></div>
     <div class="shop-section">
-        <div class="box">
-            <div class="box-content">
-                <h2>Clothes..</h2>
-             <div class="box-img"></div>
-               <p>Explore more</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>Health & Personal</h2>
-             <div class="box-img2"></div>
-               <p>Explore more</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>Furniture</h2>
-             <div class="box-img3"></div>
-               <p>Explore more</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>Electronic Device....</h2>
-             <div class="box-img4"></div>
-               <p>Explore more</p>
-            </div>  
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>BeautyPicks</h2>
-             <div class="box-img5"></div>
-               <p>Explore more</p>
-            </div>  
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>pets care</h2>
-             <div class="box-img6"></div>
-               <p>Explore more</p>
-            </div>  
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>New arrivals in Toys</h2>
-             <div class="box-img7"></div>
-               <p>Explore more</p>
-            </div>  
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>Discover fashion trends</h2>
-             <div class="box-img8"></div>
-               <p>Explore more</p>
-            </div>  
-        </div>
+        <div class="box"><div class="box-content"><h2>Clothes</h2><div class="box-img"></div><p>Explore more</p></div></div>
+        <div class="box"><div class="box-content"><h2>Health & Personal</h2><div class="box-img2"></div><p>Explore more</p></div></div>
+        <div class="box"><div class="box-content"><h2>Furniture</h2><div class="box-img3"></div><p>Explore more</p></div></div>
+        <div class="box"><div class="box-content"><h2>Electronic Devices</h2><div class="box-img4"></div><p>Explore more</p></div></div>
+        <div class="box"><div class="box-content"><h2>Beauty Picks</h2><div class="box-img5"></div><p>Explore more</p></div></div>
+        <div class="box"><div class="box-content"><h2>Pets Care</h2><div class="box-img6"></div><p>Explore more</p></div></div>
+        <div class="box"><div class="box-content"><h2>New Toys</h2><div class="box-img7"></div><p>Explore more</p></div></div>
+        <div class="box"><div class="box-content"><h2>Fashion Trends</h2><div class="box-img8"></div><p>Explore more</p></div></div>
     </div>
     <footer>
-        <div class="foot-panel1">
-            Back to top
-        </div>
+        <div class="foot-panel1">Back to top</div>
         <div class="foot-panel2">
-            <ul>
-                <p>Get to Know Us</p>
-                <a>About Amazon</a>
-                <a>Careers</a>
-                <a>Press Releases</a>
-                <a>Amazon Science</a>                
-            </ul>
-            <ul>
-                <p>Get to Know Us</p>
-                <a>About Amazon</a>
-                <a>Careers</a>
-                <a>Press Releases</a>
-                <a>Amazon Science</a>                
-            </ul>
-            <ul>
-                <p>Connect with Us</p>
-                <a>Facebook</a>
-                <a>Twitter<a>
-                <a>Instagram</a>          
-            </ul>
-            <ul>
-                <p>Make Money with Us</p>
-                <a>Sell on Amazon</a>
-                <a>Sell under Amazon Accelerator</a>
-                <a>Protect and Build Your Brand</a>
-                <a>Amazon Global Selling</a>
-                <a>Supply to Amazon</a>
-                <a>Become an Affiliate</a>
-                <a>Fulfilment by Amazon</a>
-                <a>Advertise Your Products</a>
-                <a>Amazon Pay on Merchants</a>
-            </ul>
-            <ul>
-                <p>Let Us Help Us</p>
-                <a>Your Account</a>
-                <a>Returns Centre</a>
-                <a>Recalls and Product Safety Alerts</a>
-                <a>100% Purchase Protection</a>
-                <a>Amazon App Download</a>
-                <a>Help</a>
-            </ul>
+            <ul><p>Get to Know Us</p><a>About Amazon</a><a>Careers</a><a>Press Releases</a><a>Amazon Science</a></ul>
+            <ul><p>Connect with Us</p><a>Facebook</a><a>Twitter</a><a>Instagram</a></ul>
+            <ul><p>Make Money with Us</p><a>Sell on Amazon</a><a>Sell under Accelerator</a><a>Build Your Brand</a><a>Global Selling</a></ul>
+            <ul><p>Let Us Help You</p><a>Your Account</a><a>Returns Centre</a><a>Purchase Protection</a><a>Help</a></ul>
         </div>
-        <div class="foot-panel3">
-            <div class="logo border"></div>
+         <div class="foot-panel3">
+         <a href="#top" class="logo border"></a>
         </div>
+
         <div class="font-panel4">
-            <span><a><h4>AbeBooks</h4></a>
-                <div class="link-add"><a>Books, art<br>
-                    & collectibles</a></div>
-                
-            </span>
-                
-                    <span><a><h4>Amazon Web Services</h4></a>
-                        <div class="link-add"><a>Scalable Cloud<br>
-                            Computing Services</a></div>
-                    </span>
-
-
-                    <span><a><h4>Audible</h4></a>
-                            <div class="link-add"><a>Download</a><br>
-                                <a>Audio Books</a></div>
-                    </span>
-
-
-                    <span><a><h4>IMDb</h4></a>
-                                <div class="link-add"><a>Movies,TV<br>
-                                    & Celebrities</a></div>
-                    </span>
-
-
-                    <span><a><h4>Shopbop</h4></a>
-                          <div class="link-add"><a>Designer<br>
-                            Fashion Brands</a></div>
-                    </span>
-
-
-                         
-                    <span><a><h4>Amazon bussiness</h4></a>
-                          <div class="link-add"><a>Everything for<br> Your business</a></div>
-                    </span>
-
-
-                    <span><a><h4>Prime Now</h4></a>
-                          <div class="link-add"><a>2-Hour Delivery<br>
-                            on Everyday Items</a></div>
-                    </span>
-
-                    <span><a><h4>Amazon Prime Music</h4></a>
-                        <div class="link-add"><a>100 million songs,ad-<br>free<br>
-                            over 15 million podcast <br>episodes</a></div>
-                  </span>
-                   
+            <span><h4>AbeBooks</h4><div class="link-add">Books, art & collectibles</div></span>
+            <span><h4>Amazon Web Services</h4><div class="link-add">Cloud Computing</div></span>
+            <span><h4>Audible</h4><div class="link-add">Download Audio Books</div></span>
+            <span><h4>IMDb</h4><div class="link-add">Movies & Celebrities</div></span>
+            <span><h4>Shopbop</h4><div class="link-add">Fashion Brands</div></span>
+            <span><h4>Amazon Business</h4><div class="link-add">Everything for Your Business</div></span>
+            <span><h4>Prime Now</h4><div class="link-add">2-Hour Delivery</div></span>
+            <span><h4>Prime Music</h4><div class="link-add">100M songs, ad-free</div></span>
         </div>
         <div class="font-panel5">
-            <div class="link"><h5><a>conditions of Use & Sale Privacy Notice Interest-based Ads<br>1996-2025,Amazon.com,inc.or its affiliates</a></h5></div>
-            
-          </div>
+            <h5>Conditions of Use & Sale | Privacy Notice | Interest-Based Ads<br>1996-2025, Amazon.com, Inc. or its affiliates</h5>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
