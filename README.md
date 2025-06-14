@@ -2,7 +2,7 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-This is my first time to Upload a Project and this is going to giving me so much knownledge about how to upload a project.
+This is my first time to Upload a Project and this is going to giving me so much knowledge about how to upload a project.
 And going to project description.........................................................................
 
 Build a Basic interesting project on  Amazon_clone inspired by Amazon.
